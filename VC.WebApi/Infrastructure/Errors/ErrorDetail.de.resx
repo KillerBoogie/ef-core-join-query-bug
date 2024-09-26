@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Phone_Public_Part_Max_Length_Exceeded" xml:space="preserve">
+    <value>Die maximale Länge einer Telefonnummer ohne Durchwahl ist {0} Ziffern plus ein optionales führendes '+' Zeichen.</value>
+  </data>
+  <data name="Invalid_Language" xml:space="preserve">
+    <value>Die Sprache '{0}' ist keine gültige Sprache.</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>ungültiger Wert für '{0}'.</value>
+  </data>
+  <data name="Max_Char_Length_Exceeded" xml:space="preserve">
+    <value>{0} ist zu lang. Die maximale Länge beträgt {1} Zeichen.</value>
+  </data>
+  <data name="Invalid_Guid" xml:space="preserve">
+    <value>{0} ist keine gültige Guid.</value>
+  </data>
+  <data name="Date_Cant_Be_Before_Min_Date" xml:space="preserve">
+    <value>Das datum kann nicht vor {0} sein.</value>
+  </data>
+  <data name="Date_Cant_Be_In_Future" xml:space="preserve">
+    <value>{0} kann nicht in der Zukunft liegen.</value>
+  </data>
+  <data name="Length_Out_Of_Range" xml:space="preserve">
+    <value>{0} muss zwischen {1} und {2} Zeichen lang sein.</value>
+  </data>
+  <data name="Max_Digit_Length_Exceeded" xml:space="preserve">
+    <value>{0} ist zu lang. Die maximale Länge beträgt {1} Zeichen.</value>
+  </data>
+  <data name="Min_Char_Length_Deceeded" xml:space="preserve">
+    <value>{0} ist zu kurz. Die minimale Länge beträgt {1} Zeichen.</value>
+  </data>
+  <data name="Must_Not_Be_Empty" xml:space="preserve">
+    <value>{0} darf nicht leer sein.</value>
+  </data>
+  <data name="Only_Digits" xml:space="preserve">
+    <value>{0} darf nur aus Ziffern bestehen.</value>
+  </data>
+  <data name="Min_Digit_Length_Deceeded" xml:space="preserve">
+    <value>{0} ist zu kurz. Die minimale Länge beträgt {1} Ziffer(n).</value>
+  </data>
+  <data name="Affected_Rows" xml:space="preserve">
+    <value>Die Anzahl der betroffenen Zeilen The number of affected rows for {0} with ID [{1}] should be {2}, but was {3}.</value>
+  </data>
+  <data name="Exists_With_Id" xml:space="preserve">
+    <value>{0} mit der ID [{1}] ist bereits vorhanden.</value>
+  </data>
+  <data name="Id_Not_Found" xml:space="preserve">
+    <value>{0} mit der ID '{1}' konnte nicht gefunden werden.</value>
+  </data>
+  <data name="Not_Successful" xml:space="preserve">
+    <value>{2} für {0} mit ID [{1}] war nicht erfolgreich.</value>
+  </data>
+  <data name="Phone_Country_Code_Invalid" xml:space="preserve">
+    <value>Der Ländercode kann maximal aus {0} Ziffern und einem optionalen führenden '+' Zeichen bestehen.</value>
+  </data>
+  <data name="At_Least_One_Lowercase_Character" xml:space="preserve">
+    <value>{0} muss mindestens einen Kleinbuchstaben enthalten.</value>
+  </data>
+  <data name="At_Least_One_Number" xml:space="preserve">
+    <value>{0} muss mindestens eine Ziffer enthalten.</value>
+  </data>
+  <data name="At_Least_One_Special_Character" xml:space="preserve">
+    <value>{0} muss mindestens ein Sonderzeichenenthalten.</value>
+  </data>
+  <data name="At_Least_One_Uppercase_Character" xml:space="preserve">
+    <value>{0} muss mindestens einen Großbuchstaben enthalten.</value>
+  </data>
+  <data name="Char_Length_Incorrect" xml:space="preserve">
+    <value>{0} muss aus genau {1} Zeichen bestehen.</value>
+  </data>
+  <data name="Database_Not_Available" xml:space="preserve">
+    <value>Die Datenbank ist nicht verfügbar.</value>
+  </data>
+  <data name="Failed_Unexpectedly" xml:space="preserve">
+    <value>Die Operation ist unerwartet fehlgeschlagen.</value>
+  </data>
+  <data name="Modified_By_Other_User" xml:space="preserve">
+    <value>{0} wurde von einem anderen Benutzer verändert.</value>
+  </data>
+  <data name="Must_Be_Empty" xml:space="preserve">
+    <value>'{0}' muss leer sein.</value>
+  </data>
+  <data name="Invalid_Date" xml:space="preserve">
+    <value>{0} ist kein gültiges Datum.</value>
+  </data>
+  <data name="Route_ID_Not_Match_DTO_ID" xml:space="preserve">
+    <value>Der ID-Wert der HTTP-Route stimmt nicht mit ID-Wert im DTO überein.</value>
+  </data>
+  <data name="Invalid_Regex" xml:space="preserve">
+    <value>{0} ist kein gültiger Regex-Ausdruck. Details: {1}</value>
+  </data>
+  <data name="Max_Decimal_Places_Exceeded" xml:space="preserve">
+    <value>Der Wert übersteigt die Präzision. Die maximale Anzahl an Dezimalstellen beträgt {0}.</value>
+  </data>
+  <data name="Max_Value_Exceeded" xml:space="preserve">
+    <value>Der Wert von {0} übersteigt das Maximum von {1}.</value>
+  </data>
+  <data name="Min_Value_Deceeded" xml:space="preserve">
+    <value>Der Wert ist kleiner als das Minimum von {0}.</value>
+  </data>
+  <data name="Invalid_Value" xml:space="preserve">
+    <value>Dies ist kein gültiger Wert  für '{0}'.</value>
+  </data>
+  <data name="No_Leading_Or_Trailing_Space" xml:space="preserve">
+    <value>{0} kann keine führenden oder folgenden Leerzeichen haben.</value>
+  </data>
+  <data name="Not_Only_Whitespace" xml:space="preserve">
+    <value>{0} kann nicht nur Leerzeichen enthalten.</value>
+  </data>
+  <data name="Must_Be_Pos_Int" xml:space="preserve">
+    <value>'{0}' muss eine positive ganze Zahl sein.</value>
+  </data>
+  <data name="Duplicate_Values" xml:space="preserve">
+    <value>'{0}' hat Duplikate für die Werte '{1}'.</value>
+  </data>
+  <data name="Must_Be_Zero" xml:space="preserve">
+    <value>'{0}' muss Null sein. </value>
+  </data>
+  <data name="Must_Not_Be_Zero" xml:space="preserve">
+    <value>{0} kann nicht Null sein.</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>{0} ist erforderlich.</value>
+  </data>
+  <data name="FromDate_Must_Be_Before_UntilDate" xml:space="preserve">
+    <value>Das Von-Datum '{0}' muss vor dem Bis-Datum '{1}' liegen.</value>
+  </data>
+  <data name="FromDate_Or_UntilDate_Must_Be_Not_Null" xml:space="preserve">
+    <value>Das Von-Datum oder das Bis-Datum muss einen gültigen Wert enthalten.</value>
+  </data>
+  <data name="Must_Be_Pos_Int_Or_Zero" xml:space="preserve">
+    <value>'{0}' muss eine positive ganze Zahl oder Null sein.</value>
+  </data>
+  <data name="Invalid_System_Language" xml:space="preserve">
+    <value>'{0}' ist keine gültge Systemsprache.</value>
+  </data>
+  <data name="Not_Found" xml:space="preserve">
+    <value>{0} konnte nicht gefunden werden.</value>
+  </data>
+  <data name="No_Permission_For_Command" xml:space="preserve">
+    <value>Der Nutzer hat keine Berechtigung für diesen Befehl.</value>
+  </data>
+  <data name="No_Permission_For_Field" xml:space="preserve">
+    <value>Keine Berechtigung für das/die Feld(er) '{0}'.</value>
+  </data>
+  <data name="No_Permission_For_Object" xml:space="preserve">
+    <value>Keine Berechtigung für das Objekt '{0}'.</value>
+  </data>
+  <data name="No_Permission_For_Request" xml:space="preserve">
+    <value>Fehlende Berechtigung für die Anfrage.</value>
+  </data>
+  <data name="Request_Body_Requires_At_Least_One_Field" xml:space="preserve">
+    <value>Der Request Body muss mindestens ein Feld enthalten.</value>
+  </data>
+  <data name="Exists_Already" xml:space="preserve">
+    <value>'{0}' exists already.</value>
+  </data>
+  <data name="Update_Data_Missing" xml:space="preserve">
+    <value>Daten für Update fehlen.</value>
+  </data>
+  <data name="A_Or_B_Required" xml:space="preserve">
+    <value>{0} oder {1} ist erforderlich.</value>
+  </data>
+  <data name="Page_Not_Found" xml:space="preserve">
+    <value>Die angeforderte Seite konnte nicht gefunden werden.</value>
+  </data>
+  <data name="Unpaged_Request_Must_Not_Have_PageNumber_Or_PageSize_Params" xml:space="preserve">
+    <value>Nicht paginierte Requests mit paged = false dürfen keine 'pageNumber' oder 'pageSize' Queryparameter haben.</value>
+  </data>
+  <data name="AllLangauages_Request_Must_Not_Have_Language_Params" xml:space="preserve">
+    <value>Requests mit 'allLanguage' Queryparameter dürfen keine 'language' Queryparameter haben.</value>
+  </data>
+  <data name="Hour_Ambigiush" xml:space="preserve">
+    <value>Die Stunde gibt es zweimal, weil die Uhr zurückgedreht wurde. Sie müssen angeben, ob die Stunde zur ersten (A) oder zur zweiten (B) Periode gehört.</value>
+  </data>
+  <data name="Hour_Skipped" xml:space="preserve">
+    <value>Die angegebene Stunde gibt es nicht, weil die Uhr vorgestellt wurde, z. B. durch eine Umstellung auf Sommerzeit oder eine allgemeine Zeitumstellung für diese Zone.</value>
+  </data>
+  <data name="TimeDiscriminator_Not_Valid" xml:space="preserve">
+    <value>Die angegebene Spezifizierung ({0}) für die Stunde ist für diese lokale Zeit ungültig.</value>
+  </data>
+  <data name="No_Permission_For_Object_Fields" xml:space="preserve">
+    <value>Keine Berechtigung für die Felder des Objekts '{0}'.</value>
+  </data>
+  <data name="ML_Cant_Remove_Language_Does_Not_Exists" xml:space="preserve">
+    <value>Der Wert konnte nicht erntfernt werden. Er existiert nicht in der Sprache '{0}'.</value>
+  </data>
+  <data name="ML_Cant_Remove_Language_Requires_At_Least_One_Language" xml:space="preserve">
+    <value>Der Wert kann in der Sprache '{0}' nicht entfernt werden. Ein Wert in mindestens einer Sprache ist erforderlich.</value>
+  </data>
+  <data name="ML_Language_Does_Not_Exists" xml:space="preserve">
+    <value>Der Wert exisitiert nicht in der Sprache '{0}'.</value>
+  </data>
+  <data name="ML_Requires_At_Least_One_Language" xml:space="preserve">
+    <value>{0} erfordert einen Wert in mindestens einer Sprache.</value>
+  </data>
+  <data name="Invalid_Uri" xml:space="preserve">
+    <value>'{0}' ist keine gültige URI.</value>
+  </data>
+  <data name="Not_Authenticated" xml:space="preserve">
+    <value>Nicht authentifiziert</value>
+  </data>
+  <data name="Not_Found_Resource_With_Id" xml:space="preserve">
+    <value>Die Resource '{0}' mit Id '{1}' wurde nicht gefunden.</value>
+  </data>
+  <data name="Required_Field" xml:space="preserve">
+    <value>Das Feld '{0}' ist erforderlich.</value>
+  </data>
+  <data name="Required_Parameter" xml:space="preserve">
+    <value>Der Parameter '{0}' ist erforderlich.</value>
+  </data>
+  <data name="Delete_Foreign_Key_Violation" xml:space="preserve">
+    <value>Verletzung der Fremdschlüssel-Einschränkung. Referenztabelle: {0} Einschränkungsname: {1} Kommando: {2}</value>
+  </data>
+  <data name="Unique_MLValue_Required" xml:space="preserve">
+    <value>Das Attribut '{0}' enthält bereits einen Wert '{1}' in der Sprache '{2}'.</value>
+  </data>
+  <data name="Unique_Value_Required" xml:space="preserve">
+    <value>Das Attribut '{0}' enthält bereits einen Wert '{1}'.</value>
+  </data>
+  <data name="No_Deletion_For_Linked_Resource" xml:space="preserve">
+    <value>Die Ressource '{0}' kann nicht gelöscht werden, weil sie von der Ressource '{1}' referenziert wird.</value>
+  </data>
+  <data name="Resource_Not_Found_At_Uri" xml:space="preserve">
+    <value>Die Resource '{0}' kann unter der angegebenen URI '{1}' nicht gefunden oder geladen werden.</value>
+  </data>
+  <data name="Resource_At_Uri_Cant_Be_Read" xml:space="preserve">
+    <value>Die Resource '{0}' bei URI '{1}' kann nicht gelesen werden.</value>
+  </data>
+  <data name="Invalid_RGBA_Format" xml:space="preserve">
+    <value>Die EIngabezeichenfolge '{0}' hat kein gültiges RGBA-Format.</value>
+  </data>
+  <data name="Uploaded_File_Is_Empty" xml:space="preserve">
+    <value>Die hochgeladene Datei ist leer.</value>
+  </data>
+  <data name="Not_a_Valid_MultiLanguage_Json_Format" xml:space="preserve">
+    <value>Der Wert von '{0}' ist kein gültiges JSON Format für mehrsprachigen Text. Beispiel: {{"de":"German","en":"English"}}.</value>
+  </data>
+  <data name="No_File_Uploaded" xml:space="preserve">
+    <value>Es wurde keine Datei hochgeladen.</value>
+  </data>
+  <data name="Uploaded_File_X_Is_Empty" xml:space="preserve">
+    <value>Die hochgeladene Datei ist leer.</value>
+  </data>
+  <data name="Not_An_Accepted_Image_Type" xml:space="preserve">
+    <value>Es sind nur Bilder vom Typ jpg, png, gif, webp und svg erlaubt.</value>
+  </data>
+  <data name="Culture_Name" xml:space="preserve">
+    <value>'{0}' ist kein gültiger Name für eine Systemsprache (CultureInfo).</value>
+  </data>
+  <data name="Uploaded_File_MaxSize_Exceeded" xml:space="preserve">
+    <value>Die hochgeladene Datei überschreitet die erlaubte Größe</value>
+  </data>
+  <data name="Missing_Value_for_Valid_MultiLanguage_Json" xml:space="preserve">
+    <value>Fehlender Wert für das Multi-Sprachen Feld</value>
+  </data>
+  <data name="File_Upload_Failed" xml:space="preserve">
+    <value>Datei hochladen fehlgeschlagen '{0}'</value>
+  </data>
+  <data name="Required_File" xml:space="preserve">
+    <value>Die Datei ist erforderlich.</value>
+  </data>
+  <data name="Invalid_Event_Visibility" xml:space="preserve">
+    <value>Kein gültiger Wert für die Sichtbarkeit eines Events.</value>
+  </data>
+  <data name="Resource_Does_Not_Exist" xml:space="preserve">
+    <value>Die Resource '{0}' mit ID '{1}' exisitiert nicht.</value>
+  </data>
+  <data name="Contains_Invalid_Characters" xml:space="preserve">
+    <value>{0} enthält ungültige Zeichen</value>
+  </data>
+</root>

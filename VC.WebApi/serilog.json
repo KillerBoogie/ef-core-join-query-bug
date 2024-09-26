@@ -1,0 +1,42 @@
+{
+  "Serilog": {
+    "LevelSwitches": {
+      "$consoleSwitch": "Information",
+      "$fileSwitch": "Information"
+    },
+    "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.File" ],
+    "MinimumLevel": {
+      "Default": "Verbose",
+      "Override": {
+        "System": "Information",
+        "Microsoft.EntityFrameworkCore": "Debug",
+        "Microsoft.EntityFrameworkCore.Database.Command": "Debug",
+        "Microsoft": "Error",
+        "Microsoft.AspNetCore": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "Args": {
+          "levelSwitch": "$consoleSwitch",
+          "outputTemplate": "{Timestamp:HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}"
+        }
+      },
+      {
+        "Name": "File",
+        "Args": {
+          "path": "../Logs/vc-.log",
+          "rollingInterval": "Day",
+          "formatter": "Serilog.Formatting.Json.JsonFormatter",
+          "outputTemplate": "{Timestamp:HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
+          "levelSwitch": "$fileSwitch"
+        }
+      }
+    ],
+    "Properties": {
+      "Application": "VC"
+    }
+  },
+  "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId", "WithEnvironmentName", "WithSessionId", "WithUserName", "WithHttpRequest" ]
+}
