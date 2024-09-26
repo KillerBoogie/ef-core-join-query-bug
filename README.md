@@ -5,14 +5,18 @@ Demo project for EF Core [issue 34749](https://github.com/dotnet/efcore/issues/3
 Update the sql server connection string in appsettings.json.
 
 ## Run
-Run the application. The database will be automatically created and filled with test data.
+Run the application. The database will automatically be created and filled with test data.
 
-To reproduce the error choose GET Locations and `Try Out`. Don't enter a language. Just choose `Execute`in Swagger UI.
+To reproduce the error choose GET Locations and `Try Out`. Don't enter a language in the query parameter. Just choose `Execute`in Swagger UI.
 
-(If you enter a language you can check [issue 34752](https://github.com/dotnet/efcore/issues/34751).)
+(If you enter a language, i.e. "de" or "en" you can check [issue 34752](https://github.com/dotnet/efcore/issues/34751).)
+
+## Code File
+
+The LINQ for the query can be found at VC.WebApi/Features/Locations/GetLocations/GetLocationsRepository.cs
 
 ## Error
-The created SQL query has an extra faulty `LEFT JOIN`:
+The created SQL query has an extra faulty 2nd `LEFT JOIN` and doubled fields in the `SELECT`:
 
 ```
 SELECT [l].[LocationId], [l].[Name], [t].[ImageId], [t].[DisplayOrder], [t].[Language], [t].[ScreenSize], [t].[FocusPointX], [t].[FocusPointY], [t].[Uri], [t].[c], [t].[c0], [t].[TId], [t].[ImageId0], [l].[Created], [l].[CreatedBy], [l].[CreatedInNameOf], [l].[LastModified], [l].[LastModifiedBy], [l].[LastModifiedInNameOf], [l].[TId], [l].[Version], [l].[Address_City], [l].[Address_CountryId], [l].[Address_CountryName], [l].[Address_DeliveryInstruction], [l].[Address_State], [l].[Address_Street], [l].[Address_StreetAffix], [l].[Address_StreetNumber], [l].[Address_ZipCode], [l1].[TId], [l1].[DisplayOrder], [l1].[FocusPointX], [l1].[FocusPointY], [l1].[ImageId], [l1].[Language], [l1].[LocationId], [l1].[ScreenSize]
@@ -29,4 +33,6 @@ ORDER BY [l].[LocationId], [t].[TId], [t].[ImageId0]
 The code crashes at the constructor of `ImageItem`.
 
 Due to the generated SQL the exception is not thrown, when a `location` has no `coverImage`.
+
+
 
