@@ -11,9 +11,5 @@ namespace VC.WebApi.Domain.ImageItems
         ScreenSize? ScreenSize = null,
         FocusPoint? FocusPointX = null,
         FocusPoint? FocusPointY = null
-        )
-    {
-        // Private parameterless constructor for EF Core
-        private ImageItem() : this(default!) { }
-    }
+        );
 }
