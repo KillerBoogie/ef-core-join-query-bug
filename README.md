@@ -30,9 +30,7 @@ LEFT JOIN [VC].[LocationCoverImage] AS [l1] ON [l].[LocationId] = [l1].[Location
 ORDER BY [l].[LocationId], [t].[TId], [t].[ImageId0]
 ```
 
-The code crashes at the constructor of `ImageItem`.
 
-Due to the generated SQL the exception is not thrown, when a `location` has no `coverImage`.
 
 
 
